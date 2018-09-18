@@ -7,16 +7,15 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Atomic file writes.
+Summary: Atomic file writes
 
 
 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/atomicwrites-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/atomicwrites-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/atomicwrites-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/atomicwrites-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/atomicwrites-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/atomicwrites-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/atomicwrites-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/atomicwrites-feedstock)
 
 Current release info
 ====================
