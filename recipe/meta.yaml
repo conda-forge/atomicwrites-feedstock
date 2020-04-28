@@ -1,4 +1,4 @@
-{% set version = "1.3.0" %}
+{% set version = "1.4.0" %}
 
 package:
   name: atomicwrites
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/atomicwrites/atomicwrites-{{ version }}.tar.gz
-  sha256: 75a9445bac02d8d058d5e1fe689654ba5a6556a1dfd8ce6ec55a0ed79866cfa6
+  sha256: ae70396ad1a434f9c7046fd2dd196fc04b12f9e91ffb859164193be8b6168a7a
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Atomic file writes'
+  summary: Atomic file writes
   dev_url: https://github.com/untitaker/python-atomicwrites
 
 extra:
