@@ -15,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python 2.7|>=3.4
     - pip
   run:
-    - python
+    - python 2.7|>=3.4
 
 test:
   source_files:
