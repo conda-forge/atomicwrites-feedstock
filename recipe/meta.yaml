@@ -5,20 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/atomicwrites/atomicwrites-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/a/atomicwrites/atomicwrites-{{ version }}.tar.gz
   sha256: 81b2c9071a49367a7f770170e5eec8cb66567cfbbc8c73d20ce5ca4a8d71cf11
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python 2.7|>=3.4
+    - python {{ python_min }}
     - pip
   run:
-    - python 2.7|>=3.4
+    - python >={{ python_min }}
 
 test:
   source_files:
@@ -29,6 +29,7 @@ test:
     - pytest tests
   requires:
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/untitaker/python-atomicwrites
